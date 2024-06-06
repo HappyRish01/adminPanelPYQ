@@ -1,0 +1,77 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+}
+
+.menu, .submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+}
+
+.menu > li > a:hover {
+    background-color: #444;
+}
+
+/* Submenu styles */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.submenu > li > a {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu > li > a:hover {
+    background-color: #555;
+}
+
+/* Show submenu on hover */
+.menu > li:hover > .submenu {
+    display: block;
+}
+
+.submenu .submenu {
+    top: 0;
+    left: 100%;
+}
+
+/* Adding some animation for smoother transition */
+.menu > li:hover > .submenu, .submenu > li:hover > .submenu {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
