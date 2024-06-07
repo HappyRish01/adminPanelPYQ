@@ -13,7 +13,7 @@ export default function Dropdown() {
     Science
   </button>
 
-  <ul className="dropdown-menu">
+  <ul className="dropdown-menu ">
     
       <ul className='Child'>
         
@@ -26,8 +26,13 @@ export default function Dropdown() {
    
   </ul>
 </div>
+<<<<<<< HEAD
 <div className="btn-group">
   <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" onClick={()=> {setStream('Commerce')}}>
+=======
+<div className="btn-group my-4 mx-3">
+  <button className="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+>>>>>>> cead543a44ba070a82535d8283f235c101c65258
     Commerce
   </button>
 
@@ -50,7 +55,7 @@ export default function Dropdown() {
 
 
 
-</>
+</div>
   )
   }
   
