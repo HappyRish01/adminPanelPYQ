@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useState } from 'react'
+import { AppContext } from '../AppContext'
 
-export default function Navbar() {
-    const [year , setYear ] = useState(2023)
-    console.log(year)
-  return (
+
+
+
+function Navbar() {
+    
+    
+  
+    const data = useContext(AppContext)
+    
+    return (
+      
+        
     <div>
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
@@ -25,9 +34,9 @@ export default function Navbar() {
             Year
           </a>
           <ul className="dropdown-menu">
-            <li  className="dropdown-item" onClick={()=> {setYear(2022)}}>2022</li>
-            <li  className="dropdown-item" onClick={()=> {setYear(2023)}}>2023</li>
-            <li  className="dropdown-item" onClick={()=> {setYear(2024)}}>2024</li>
+            <li  className="dropdown-item" onClick={()=> {data.setYear(2022)}}>2022</li>
+            <li  className="dropdown-item" onClick={()=> {data.setYear(2023)}}>2023</li>
+            <li  className="dropdown-item" onClick={()=> {data.setYear(2024)}}>2024</li>
             
           </ul>
         </li>
@@ -38,5 +47,7 @@ export default function Navbar() {
 </nav>
         
     </div>
+      
   )
 }
+export default Navbar
