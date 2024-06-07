@@ -4,13 +4,13 @@ export default function Dropdown() {
   return (
 
 
-<>
-<div className="btn-group">
-  <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+<div className='container'>
+<div className=" boss my-4 mx-3">
+  <button className="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
     Science
   </button>
 
-  <ul className="dropdown-menu">
+  <ul className="dropdown-menu ">
     
       <ul className='Child'>
         
@@ -23,8 +23,8 @@ export default function Dropdown() {
    
   </ul>
 </div>
-<div className="btn-group">
-  <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+<div className="btn-group my-4 mx-3">
+  <button className="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
     Commerce
   </button>
 
@@ -47,7 +47,7 @@ export default function Dropdown() {
 
 
 
-</>
+</div>
   )
   }
   
